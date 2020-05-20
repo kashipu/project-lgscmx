@@ -1,0 +1,116 @@
+@import '_reset.css';
+@import '_fonts.css';
+
+:root {
+    font-size: 16px;
+    --bluenav: #002E72;
+    --bluemark: #0066FF;
+    --fucsia: #E7004C;
+    --white: white;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    /* padding: 0rem 1rem; */
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header span {
+    cursor: pointer;
+}
+
+.HeaderItems {
+    padding: 0rem 1rem;
+    display: flex;
+    display: flex;
+    font-size: 1.1rem;
+    background-color: var(--bluenav);
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    height: 3rem;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: var(--fucsia);
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out,
+        transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: rgb(151, 0, 50);
+}
+
+button:focus {
+    outline: 1px solid #fff;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+.nav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 3rem;
+    left: 0;
+    background-color: var(--white);
+    border: 1px solid red;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.content {
+    padding-top: 3rem;
+    background-color: aquamarine;
+    margin-left: 15%;
+    border: 1px solid red;
+    height: 2000px;
+}
+
+
+footer {
+    display: block;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 700px) {
+    .nav {
+        width: 100%;
+    }
+
+    .show {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0px;
+    }
+}
